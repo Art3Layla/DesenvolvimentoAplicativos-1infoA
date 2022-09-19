@@ -3,19 +3,19 @@ programa
 	inclua biblioteca Matematica --> mat	
 	funcao inicio()
 	{
-		real capital, juros, montante
+		real cap, j, mont
 		inteiro tempo, i
-		escreva("Informe o capital: ")
+		 escreva("Informe o capital: ")
 		leia(capital)
-		escreva("Informe os juros:" )
+		 escreva("Informe os juros:" )
 		leia(juros)
-		escreva("Informe o tempo em meses: ")
+		 escreva("Informe o tempo em meses: ")
 		leia(tempo)
-		juros = juros/100
-		montante = capital * (1+juros)
+		  j = j/100
+		  mont = cap * (1+j)
 		para(i=1;i<=tempo;i++){
-			escreva("Montante: ", mat.arredondar(montante,2),"\n")
-			montante = montante + (montante * juros)
+			escreva("Montante: ", mat.arredondar(mont,2),"\n")
+			mont = mont + (mont * j)
 		}
 	}
 }
